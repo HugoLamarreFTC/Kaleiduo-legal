@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kaleiduo · Privacy Policy</title>
+<meta name="description" content="Privacy policy for Kaleiduo, the live-camera kaleidoscope for iPhone.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0A0908">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+:root{--ground:#0A0908;--panel:#14120F;--ivory:#EDE6D6;--stone:#A39C8C;--brass:#D4A655;--tick:#8E8778;--line:rgba(212,166,85,.22);
+--sans:"Instrument Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+--serif:"Instrument Serif",Georgia,"Times New Roman",serif;--mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+@font-face{font-family:"Instrument Serif";src:url(fonts/InstrumentSerif-Regular.ttf) format("truetype");font-display:swap}
+@font-face{font-family:"Instrument Sans";src:url(fonts/InstrumentSans-Variable.ttf) format("truetype");font-weight:400 700;font-display:swap}
+@font-face{font-family:"IBM Plex Mono";src:url(fonts/IBMPlexMono-Regular.ttf) format("truetype");font-display:swap}
+*{box-sizing:border-box}
+html{color-scheme:dark;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ivory);font:16px/1.65 var(--sans)}
+:lang(zh){font-family:"Instrument Sans","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif}
+:lang(ja){font-family:"Instrument Sans","Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",sans-serif}
+:lang(hi){font-family:"Instrument Sans","Kohinoor Devanagari","Noto Sans Devanagari","Nirmala UI",sans-serif;line-height:1.8}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+.top{display:flex;align-items:center;gap:18px;padding:52px 0 22px}
+.icon{width:72px;height:72px;border-radius:16px;box-shadow:0 0 0 1px var(--line);flex:none}
+.eyebrow{font:12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--brass);margin:0 0 10px}
+.wordmark{font:400 52px/1 var(--serif);letter-spacing:-.01em;margin:0}
+.ticks{height:12px;background:repeating-linear-gradient(90deg,var(--tick) 0 1px,transparent 1px 14px);opacity:.6;
+-webkit-mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);position:relative}
+.ticks::after{content:"";position:absolute;left:50%;top:-4px;width:2px;height:20px;margin-left:-1px;background:var(--brass)}
+.langs{display:flex;flex-wrap:wrap;gap:8px;padding:22px 0 4px}
+.langs a{font:13px/1 var(--mono);padding:9px 13px;border:1px solid var(--line);border-radius:999px;color:var(--ivory);text-decoration:none}
+.langs a:hover,.langs a:focus-visible{border-color:var(--brass);color:var(--brass);outline:none}
+section.lang{padding:44px 0 8px;scroll-margin-top:12px}
+section.lang+section.lang{border-top:1px solid var(--line);margin-top:36px}
+.title{font:400 42px/1.1 var(--serif);margin:0 0 8px}
+:lang(zh) .title,:lang(ja) .title,:lang(hi) .title{font-family:inherit;font-weight:600;font-size:32px}
+.meta{font:13px/1.5 var(--mono);color:var(--stone);margin:0 0 26px}
+.tagline{font:400 23px/1.35 var(--serif);color:var(--stone);margin:0 0 28px}
+:lang(zh) .tagline,:lang(ja) .tagline,:lang(hi) .tagline{font-family:inherit;font-size:19px}
+h3{font-size:19px;font-weight:600;line-height:1.35;margin:34px 0 8px;display:flex;gap:12px;align-items:baseline}
+h3 .n{font:13px var(--mono);color:var(--brass);flex:none}
+p{margin:0 0 12px}
+ul{margin:0 0 12px;padding-left:1.25em}
+li{margin:0 0 8px}
+li::marker{color:var(--brass)}
+strong{font-weight:600}
+a{color:var(--brass);text-underline-offset:3px;overflow-wrap:anywhere}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin:0 0 8px}
+.card h3{margin-top:0}
+.mail{display:inline-block;margin-top:6px;font:15px/1.2 var(--mono);color:var(--ground);background:var(--brass);padding:12px 18px;border-radius:999px;text-decoration:none}
+.mail:hover,.mail:focus-visible{background:#E2BA72;outline:none}
+.faq{margin-top:34px}
+details{border-top:1px solid var(--line)}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;position:relative;padding:16px 40px 16px 0;font-weight:600;font-size:17px;line-height:1.4}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:6px;top:50%;width:14px;height:14px;margin-top:-7px;transition:transform .2s;
+background:linear-gradient(var(--brass),var(--brass)) center/14px 1.5px no-repeat,linear-gradient(var(--brass),var(--brass)) center/1.5px 14px no-repeat}
+details[open] summary::after{transform:rotate(45deg)}
+summary:focus-visible{outline:1px solid var(--brass);outline-offset:4px}
+details>div{padding:0 0 14px;color:var(--ivory)}
+.cross{margin-top:30px;font:13px var(--mono)}
+.cross a{text-decoration:none}
+footer{margin-top:56px;padding:22px 0 56px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;font:12px/1.6 var(--mono);color:var(--stone)}
+footer a{color:var(--stone)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:540px){.wrap{padding:0 16px}.top{padding-top:34px;gap:14px}.icon{width:60px;height:60px;border-radius:13px}
+.wordmark{font-size:42px}.title{font-size:34px}.card{padding:18px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}summary::after{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<img class="icon" src="icon.png" alt="" width="72" height="72">
+<div><p class="eyebrow">Privacy Policy</p><p class="wordmark">Kaleiduo</p></div>
+</header>
+<h1 class="sr">Kaleiduo Privacy Policy</h1>
+<div class="ticks" aria-hidden="true"></div>
+<nav class="langs" aria-label="Languages">
+<a href="#en" lang="en" hreflang="en">English</a>
+<a href="#fr" lang="fr" hreflang="fr">Français</a>
+<a href="#es" lang="es" hreflang="es">Español</a>
+<a href="#zh" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+<a href="#ja" lang="ja" hreflang="ja">日本語</a>
+<a href="#hi" lang="hi" hreflang="hi">हिन्दी</a>
+</nav>
+<main>
+<section class="lang" id="en" lang="en">
+<h2 class="title">Privacy Policy</h2>
+<p class="meta">Last updated: November 2026</p>
+<p>Kaleiduo (“the app”) turns your iPhone’s camera into a kaleidoscope. It’s built so that what you film stays on your iPhone unless you choose to send it somewhere. This policy explains what the app uses and why.</p>
+<h3><span class="n">01</span><span>No account, no tracking</span></h3>
+<p>Kaleiduo has no sign-in, no ads, no analytics and no third-party code that reports on you. The app makes no network connections of its own, and the developer doesn’t collect, receive, sell or share any personal information.</p>
+<h3><span class="n">02</span><span>Camera</span></h3>
+<p>The camera feeds the kaleidoscope live. Frames are processed on your iPhone and let go right away. Only the photos and videos you choose to take are kept, in the app’s gallery.</p>
+<h3><span class="n">03</span><span>Microphone</span></h3>
+<p>If you allow it, the microphone adds sound to the videos you record. It’s used only while a recording is running. Without it, videos are silent.</p>
+<h3><span class="n">04</span><span>Face data</span></h3>
+<p>Face effects (Keep face whole, Face mandala, Group mandala, Face only, Turning world, Tilt to spin and Smile to snap) and Subject mode use Apple’s Vision and Core Image frameworks, on your device, to find faces, eyes, head tilt, smiles and the outline of a person in the picture, whether it comes from the camera or from a photo you pick. This information:</p>
+<ul>
+<li>is worked out on your iPhone a few times a second and kept only in memory while an effect is on;</li>
+<li>is used only to place and frame the pattern around faces, set its spin, and start the countdown when you smile;</li>
+<li>is never saved, never sent off your iPhone, never shared with anyone and never used to identify or recognize anyone.</li>
+</ul>
+<p>The photos and videos you take show the finished pattern. No face data is stored with them.</p>
+<h3><span class="n">05</span><span>Your photos</span></h3>
+<ul>
+<li><strong>Using a photo as the source.</strong> In Library, iOS’s photo picker hands Kaleiduo only the photo you pick, with no access to the rest of your library. That photo isn’t copied or kept, and it’s gone when you relaunch the app.</li>
+<li><strong>Save to Photos.</strong> Kaleiduo asks to add to your photo library the first time you save. This permission only lets it add photos and videos, not see what’s there.</li>
+</ul>
+<h3><span class="n">06</span><span>What stays on your iPhone</span></h3>
+<ul>
+<li><strong>Your gallery:</strong> the photos and videos you take, each with its angle, pattern type, date, length, fold trace and whether it’s a favorite.</li>
+<li><strong>Your settings and choices:</strong> pattern type, filter, slice lines, rotation, face effects, and whether you’ve seen the intro, the tips and the rating question.</li>
+</ul>
+<p>This is kept in the app’s own storage on your iPhone and may be included in your iCloud or computer backups, under Apple’s terms. The developer can’t see it.</p>
+<h3><span class="n">07</span><span>Sharing</span></h3>
+<p>When you tap Share, iOS’s share sheet sends the pattern where you choose, such as Messages, Mail or another app. From there, that service’s own privacy policy applies.</p>
+<h3><span class="n">08</span><span>Feedback and ratings</span></h3>
+<ul>
+<li><strong>Send Feedback</strong> (in Settings) opens your own email app with a message addressed to the developer. Its subject line holds the app’s version and build number. Nothing is sent unless you send the email yourself. Emails are used only to reply to you and to improve the app.</li>
+<li><strong>“Enjoying Kaleiduo?”</strong> may appear now and then after you add a pattern. “Yes, love it!” brings up Apple’s own rating sheet, which Apple handles. “Not really” opens the feedback email. Kaleiduo remembers on your iPhone that it asked, so it doesn’t ask too often.</li>
+</ul>
+<h3><span class="n">09</span><span>Apple</span></h3>
+<p>Downloads and, if you’ve turned on Share With App Developers in iOS’s Analytics settings, crash reports and usage statistics are handled by Apple under Apple’s privacy policy. The developer can see these only as reports from Apple, which don’t identify you.</p>
+<h3><span class="n">10</span><span>Deleting your data</span></h3>
+<p>To delete a pattern, open it full screen from the gallery and tap Delete. Deleting the app removes its gallery and settings. Patterns you saved to Photos or shared stay where you put them. To turn off camera, microphone or Photos access, go to Settings › Kaleiduo on your iPhone.</p>
+<h3><span class="n">11</span><span>Children</span></h3>
+<p>Kaleiduo collects no personal information from anyone, including children.</p>
+<h3><span class="n">12</span><span>Your rights</span></h3>
+<p>Wherever you live, including the EU, the UK, Switzerland and Quebec, you have rights over your personal information. Since the app sends the developer nothing, there’s no data from the app to access, correct, export or delete. If you’ve emailed us, you can ask for a copy of that correspondence or ask us to delete it.</p>
+<h3><span class="n">13</span><span>Changes to this policy</span></h3>
+<p>If this policy changes, the new version will be posted on this page with a new date.</p>
+<h3><span class="n">14</span><span>Governing law</span></h3>
+<p>This policy is governed by the laws of the Province of Quebec, Canada, without regard to its conflict of law provisions.</p>
+<h3><span class="n">15</span><span>Contact</span></h3>
+<p>Kaleiduo is developed and maintained by ForThemCreation. For any question about this policy, write to <a href="mailto:forthemcreation@gmail.com">forthemcreation@gmail.com</a>.</p>
+<h3><span class="n">16</span><span>This website</span></h3>
+<p>This page is hosted on GitHub Pages. To serve it, GitHub may process technical information such as your IP address and browser details. The page itself uses no cookies, trackers or outside fonts.</p>
+<p class="cross"><a href="https://hugolamarreftc.github.io/Kaleiduo-support/#en">Support →</a></p>
+</section>
+<section class="lang" id="fr" lang="fr">
+<h2 class="title">Politique de confidentialité</h2>
+<p class="meta">Dernière mise à jour : novembre 2026</p>
+<p>Kaleiduo (« l’app ») transforme la caméra de votre iPhone en kaléidoscope. Elle est conçue pour que ce que vous filmez reste sur votre iPhone, sauf si vous choisissez de l’envoyer ailleurs. Cette politique explique ce que l’app utilise et pourquoi.</p>
+<h3><span class="n">01</span><span>Aucun compte, aucun pistage</span></h3>
+<p>Kaleiduo n’a ni connexion à un compte, ni publicité, ni outil d’analyse, ni code tiers qui rend compte de votre activité. L’app n’établit aucune connexion réseau de son côté, et le développeur ne recueille, ne reçoit, ne vend ni ne partage aucun renseignement personnel.</p>
+<h3><span class="n">02</span><span>Caméra</span></h3>
+<p>La caméra alimente le kaléidoscope en direct. Les images sont traitées sur votre iPhone, puis aussitôt abandonnées. Seules les photos et vidéos que vous choisissez de prendre sont conservées, dans la galerie de l’app.</p>
+<h3><span class="n">03</span><span>Micro</span></h3>
+<p>Si vous l’autorisez, le micro ajoute le son aux vidéos que vous enregistrez. Il n’est utilisé que pendant un enregistrement. Sans lui, les vidéos sont muettes.</p>
+<h3><span class="n">04</span><span>Données faciales</span></h3>
+<p>Les effets de visage (Visage entier, Mandala de visage, Mandala de groupe, Visage seul, Monde en rotation, Inclinez pour faire tourner et Souriez pour déclencher) et le mode Sujet utilisent les frameworks Vision et Core Image d’Apple, directement sur l’appareil, pour repérer les visages, les yeux, l’inclinaison de la tête, les sourires et la silhouette d’une personne dans l’image, qu’elle vienne de la caméra ou d’une photo que vous choisissez. Ces informations :</p>
+<ul>
+<li>sont calculées sur votre iPhone quelques fois par seconde et gardées seulement en mémoire tant qu’un effet est actif ;</li>
+<li>servent uniquement à placer et cadrer le motif autour des visages, à régler sa rotation et à lancer le compte à rebours quand vous souriez ;</li>
+<li>ne sont jamais enregistrées, jamais envoyées hors de votre iPhone, jamais partagées et jamais utilisées pour identifier ou reconnaître qui que ce soit.</li>
+</ul>
+<p>Les photos et vidéos que vous prenez montrent le motif final. Aucune donnée faciale n’y est enregistrée.</p>
+<h3><span class="n">05</span><span>Vos photos</span></h3>
+<ul>
+<li><strong>Utiliser une photo comme source.</strong> Dans Photothèque, le sélecteur de photos d’iOS ne transmet à Kaleiduo que la photo choisie, sans accès au reste de votre photothèque. Cette photo n’est ni copiée ni conservée, et elle disparaît au prochain lancement de l’app.</li>
+<li><strong>Enregistrer dans Photos.</strong> Kaleiduo demande la permission d’ajouter à votre photothèque la première fois que vous enregistrez. Cette permission lui permet seulement d’ajouter des photos et des vidéos, pas de voir ce qui s’y trouve.</li>
+</ul>
+<h3><span class="n">06</span><span>Ce qui reste sur votre iPhone</span></h3>
+<ul>
+<li><strong>Votre galerie :</strong> les photos et vidéos que vous prenez, chacune avec son angle, son type de motif, sa date, sa durée, son tracé de pliage et son statut de favori.</li>
+<li><strong>Vos réglages et choix :</strong> type de motif, filtre, lignes des secteurs, rotation, effets de visage, et si vous avez déjà vu l’introduction, les conseils et la question sur l’évaluation.</li>
+</ul>
+<p>Tout cela est conservé dans le stockage propre à l’app sur votre iPhone et peut être inclus dans vos sauvegardes iCloud ou sur ordinateur, selon les conditions d’Apple. Le développeur n’y a pas accès.</p>
+<h3><span class="n">07</span><span>Partage</span></h3>
+<p>Quand vous touchez Partager, la feuille de partage d’iOS envoie le motif là où vous le choisissez : Messages, Mail ou une autre app. À partir de là, la politique de confidentialité de ce service s’applique.</p>
+<h3><span class="n">08</span><span>Commentaires et évaluations</span></h3>
+<ul>
+<li><strong>Envoyer des commentaires</strong> (dans Réglages) ouvre votre propre app de courriel avec un message adressé au développeur. L’objet contient les numéros de version et de build de l’app. Rien n’est envoyé tant que vous n’envoyez pas le courriel vous-même. Les courriels servent uniquement à vous répondre et à améliorer l’app.</li>
+<li><strong>« Kaleiduo vous plaît ? »</strong> peut s’afficher de temps à autre après l’ajout d’un motif. « Oui, j’adore ! » ouvre la fenêtre d’évaluation d’Apple, gérée par Apple. « Pas vraiment » ouvre le courriel de commentaires. Kaleiduo note sur votre iPhone qu’il a posé la question, pour ne pas la poser trop souvent.</li>
+</ul>
+<h3><span class="n">09</span><span>Apple</span></h3>
+<p>Les téléchargements et, si vous avez activé Partager avec les développeurs dans les réglages d’analyse d’iOS, les rapports de plantage et statistiques d’utilisation sont gérés par Apple selon sa propre politique de confidentialité. Le développeur ne peut les voir que sous forme de rapports d’Apple, qui ne vous identifient pas.</p>
+<h3><span class="n">10</span><span>Supprimer vos données</span></h3>
+<p>Pour supprimer un motif, ouvrez-le en plein écran depuis la galerie et touchez Supprimer. Supprimer l’app efface sa galerie et ses réglages. Les motifs enregistrés dans Photos ou partagés restent là où vous les avez mis. Pour couper l’accès à la caméra, au micro ou à Photos, allez dans Réglages › Kaleiduo sur votre iPhone.</p>
+<h3><span class="n">11</span><span>Enfants</span></h3>
+<p>Kaleiduo ne recueille aucun renseignement personnel auprès de qui que ce soit, y compris les enfants.</p>
+<h3><span class="n">12</span><span>Vos droits</span></h3>
+<p>Où que vous viviez, notamment dans l’UE, au Royaume-Uni, en Suisse ou au Québec, vous avez des droits sur vos renseignements personnels. Comme l’app n’envoie rien au développeur, il n’y a aucune donnée provenant de l’app à consulter, corriger, exporter ou supprimer. Si vous nous avez écrit, vous pouvez demander une copie de cette correspondance ou sa suppression.</p>
+<h3><span class="n">13</span><span>Modifications de cette politique</span></h3>
+<p>Si cette politique change, la nouvelle version sera publiée sur cette page avec une nouvelle date.</p>
+<h3><span class="n">14</span><span>Droit applicable</span></h3>
+<p>Cette politique est régie par les lois de la province de Québec, au Canada, sans égard à ses règles de conflit de lois.</p>
+<h3><span class="n">15</span><span>Contact</span></h3>
+<p>Kaleiduo est développée et maintenue par ForThemCreation. Pour toute question sur cette politique, écrivez à <a href="mailto:forthemcreation@gmail.com">forthemcreation@gmail.com</a>.</p>
+<h3><span class="n">16</span><span>Ce site</span></h3>
+<p>Cette page est hébergée sur GitHub Pages. Pour l’afficher, GitHub peut traiter des informations techniques comme votre adresse IP et les détails de votre navigateur. La page elle-même n’utilise ni témoins (cookies), ni traceurs, ni polices externes.</p>
+<p class="cross"><a href="https://hugolamarreftc.github.io/Kaleiduo-support/#fr">Assistance →</a></p>
+</section>
+<section class="lang" id="es" lang="es">
+<h2 class="title">Política de privacidad</h2>
+<p class="meta">Última actualización: noviembre de 2026</p>
+<p>Kaleiduo («la app») convierte la cámara de tu iPhone en un caleidoscopio. Está hecha para que lo que grabas se quede en tu iPhone, a menos que decidas enviarlo a otro lugar. Esta política explica qué usa la app y por qué.</p>
+<h3><span class="n">01</span><span>Sin cuenta, sin rastreo</span></h3>
+<p>Kaleiduo no tiene inicio de sesión, ni anuncios, ni analíticas, ni código de terceros que informe sobre ti. La app no hace conexiones de red por su cuenta, y el desarrollador no recopila, recibe, vende ni comparte ningún dato personal.</p>
+<h3><span class="n">02</span><span>Cámara</span></h3>
+<p>La cámara alimenta el caleidoscopio en directo. Los fotogramas se procesan en tu iPhone y se descartan al instante. Solo se guardan las fotos y los videos que decides tomar, en la galería de la app.</p>
+<h3><span class="n">03</span><span>Micrófono</span></h3>
+<p>Si lo permites, el micrófono añade sonido a los videos que grabas. Solo se usa mientras hay una grabación en curso. Sin él, los videos no tienen sonido.</p>
+<h3><span class="n">04</span><span>Datos faciales</span></h3>
+<p>Los efectos de rostro (Rostro entero, Mandala de rostro, Mandala de grupo, Solo el rostro, Mundo giratorio, Inclina para girar y Sonríe para capturar) y el modo protagonista usan los frameworks Vision y Core Image de Apple, en el propio dispositivo, para encontrar rostros, ojos, la inclinación de la cabeza, sonrisas y la silueta de una persona en la imagen, ya venga de la cámara o de una foto que elijas. Esta información:</p>
+<ul>
+<li>se calcula en tu iPhone unas cuantas veces por segundo y solo se guarda en memoria mientras un efecto está activo;</li>
+<li>se usa únicamente para colocar y encuadrar el patrón alrededor de los rostros, ajustar su giro e iniciar la cuenta atrás cuando sonríes;</li>
+<li>nunca se guarda, nunca sale de tu iPhone, nunca se comparte y nunca se usa para identificar o reconocer a nadie.</li>
+</ul>
+<p>Las fotos y los videos que tomas muestran el patrón terminado. No se guarda ningún dato facial con ellos.</p>
+<h3><span class="n">05</span><span>Tus fotos</span></h3>
+<ul>
+<li><strong>Usar una foto como fuente.</strong> En Biblioteca, el selector de fotos de iOS le da a Kaleiduo solo la foto que eliges, sin acceso al resto de tu fototeca. Esa foto no se copia ni se guarda, y desaparece al volver a abrir la app.</li>
+<li><strong>Guardar en Fotos.</strong> Kaleiduo pide permiso para añadir a tu fototeca la primera vez que guardas. Este permiso solo le deja añadir fotos y videos, no ver lo que hay.</li>
+</ul>
+<h3><span class="n">06</span><span>Lo que se queda en tu iPhone</span></h3>
+<ul>
+<li><strong>Tu galería:</strong> las fotos y los videos que tomas, cada uno con su ángulo, tipo de patrón, fecha, duración, trazo del pliegue y si es favorito.</li>
+<li><strong>Tus ajustes y elecciones:</strong> tipo de patrón, filtro, líneas de sector, rotación, efectos de rostro, y si ya viste la introducción, los consejos y la pregunta de valoración.</li>
+</ul>
+<p>Todo se guarda en el almacenamiento propio de la app en tu iPhone y puede incluirse en tus copias de seguridad de iCloud o de la computadora, según los términos de Apple. El desarrollador no puede verlo.</p>
+<h3><span class="n">07</span><span>Compartir</span></h3>
+<p>Cuando tocas Compartir, la hoja para compartir de iOS envía el patrón adonde elijas, como Mensajes, Mail u otra app. A partir de ahí se aplica la política de privacidad de ese servicio.</p>
+<h3><span class="n">08</span><span>Comentarios y valoraciones</span></h3>
+<ul>
+<li><strong>Enviar comentarios</strong> (en Ajustes) abre tu propia app de correo con un mensaje dirigido al desarrollador. El asunto incluye la versión y el número de compilación de la app. No se envía nada a menos que tú envíes el correo. Los correos solo se usan para responderte y mejorar la app.</li>
+<li><strong>«¿Te gusta Kaleiduo?»</strong> puede aparecer de vez en cuando después de añadir un patrón. «¡Sí, me encanta!» abre la hoja de valoración de Apple, que gestiona Apple. «No mucho» abre el correo de comentarios. Kaleiduo recuerda en tu iPhone que ya preguntó, para no preguntar demasiado.</li>
+</ul>
+<h3><span class="n">09</span><span>Apple</span></h3>
+<p>Las descargas y, si activaste Compartir con desarrolladores en los ajustes de análisis de iOS, los informes de fallos y las estadísticas de uso los gestiona Apple según su propia política de privacidad. El desarrollador solo puede verlos como informes de Apple, que no te identifican.</p>
+<h3><span class="n">10</span><span>Eliminar tus datos</span></h3>
+<p>Para eliminar un patrón, ábrelo a pantalla completa desde la galería y toca Eliminar. Al eliminar la app se borran su galería y sus ajustes. Los patrones que guardaste en Fotos o compartiste se quedan donde los pusiste. Para desactivar el acceso a la cámara, el micrófono o Fotos, ve a Ajustes › Kaleiduo en tu iPhone.</p>
+<h3><span class="n">11</span><span>Niños</span></h3>
+<p>Kaleiduo no recopila datos personales de nadie, tampoco de niños.</p>
+<h3><span class="n">12</span><span>Tus derechos</span></h3>
+<p>Vivas donde vivas, incluidos la UE, el Reino Unido, Suiza y Quebec, tienes derechos sobre tus datos personales. Como la app no le envía nada al desarrollador, no hay datos de la app que consultar, corregir, exportar o eliminar. Si nos escribiste, puedes pedir una copia de esa correspondencia o que la eliminemos.</p>
+<h3><span class="n">13</span><span>Cambios en esta política</span></h3>
+<p>Si esta política cambia, la nueva versión se publicará en esta página con una fecha nueva.</p>
+<h3><span class="n">14</span><span>Ley aplicable</span></h3>
+<p>Esta política se rige por las leyes de la provincia de Quebec, Canadá, sin tener en cuenta sus normas sobre conflictos de leyes.</p>
+<h3><span class="n">15</span><span>Contacto</span></h3>
+<p>Kaleiduo la desarrolla y mantiene ForThemCreation. Para cualquier pregunta sobre esta política, escribe a <a href="mailto:forthemcreation@gmail.com">forthemcreation@gmail.com</a>.</p>
+<h3><span class="n">16</span><span>Este sitio web</span></h3>
+<p>Esta página está alojada en GitHub Pages. Para mostrarla, GitHub puede procesar información técnica como tu dirección IP y los datos de tu navegador. La página en sí no usa cookies, rastreadores ni fuentes externas.</p>
+<p class="cross"><a href="https://hugolamarreftc.github.io/Kaleiduo-support/#es">Soporte →</a></p>
+</section>
+<section class="lang" id="zh" lang="zh-Hans">
+<h2 class="title">隐私政策</h2>
+<p class="meta">最后更新：2026年11月</p>
+<p>Kaleiduo（“本 App”）把 iPhone 的相机变成万花筒。它的设计原则是：你拍下的内容都留在你的 iPhone 上，除非你自己选择发送出去。本政策说明本 App 使用了哪些内容，以及原因。</p>
+<h3><span class="n">01</span><span>无需账户，没有追踪</span></h3>
+<p>Kaleiduo 无需登录，没有广告，没有分析工具，也没有任何会上报你信息的第三方代码。本 App 自身不建立任何网络连接，开发者不会收集、接收、出售或共享任何个人信息。</p>
+<h3><span class="n">02</span><span>相机</span></h3>
+<p>相机画面实时输入万花筒。画面帧在你的 iPhone 上处理后立即丢弃。只有你主动拍摄的照片和视频会保存在本 App 的图库中。</p>
+<h3><span class="n">03</span><span>麦克风</span></h3>
+<p>如果你允许，麦克风会为你录制的视频加入声音。它只在录制进行时使用。不允许时，视频没有声音。</p>
+<h3><span class="n">04</span><span>面部数据</span></h3>
+<p>面部效果（保持面部完整、面部曼陀罗、多人曼陀罗、仅面部、旋转的世界、歪头旋转和微笑即拍）以及拍摄对象模式，会在设备上使用 Apple 的 Vision 和 Core Image 框架，识别画面中的面部、眼睛、头部倾斜、微笑和人物轮廓，画面可以来自相机，也可以来自你选中的照片。这些信息：</p>
+<ul>
+<li>在你的 iPhone 上每秒计算数次，仅在效果开启时保存在内存中；</li>
+<li>只用于围绕面部放置和构图图案、设定旋转，以及在你微笑时开始倒计时；</li>
+<li>绝不会被存储、绝不会离开你的 iPhone、绝不会与任何人共享，也绝不会用于辨认或识别任何人。</li>
+</ul>
+<p>你拍摄的照片和视频只呈现最终图案，不会附带任何面部数据。</p>
+<h3><span class="n">05</span><span>你的照片</span></h3>
+<ul>
+<li><strong>用照片作为画面来源。</strong>在“相册”模式下，iOS 的照片选择器只会把你选中的那张照片交给 Kaleiduo，本 App 无法访问你图库中的其他内容。这张照片不会被复制或保存，重新打开 App 后即消失。</li>
+<li><strong>存储到“照片”。</strong>你第一次存储时，Kaleiduo 会请求添加到照片图库的权限。这项权限只允许添加照片和视频，不能查看图库内容。</li>
+</ul>
+<h3><span class="n">06</span><span>保存在你 iPhone 上的内容</span></h3>
+<ul>
+<li><strong>你的图库：</strong>你拍摄的照片和视频，以及各自的角度、图案类型、日期、时长、折叠轨迹和是否收藏。</li>
+<li><strong>你的设置与选择：</strong>图案类型、滤镜、扇形分界线、旋转、面部效果，以及你是否已看过介绍、提示和评分询问。</li>
+</ul>
+<p>这些内容保存在本 App 在你 iPhone 上的专属存储空间中，并可能按照 Apple 的条款包含在你的 iCloud 或电脑备份里。开发者无法看到这些内容。</p>
+<h3><span class="n">07</span><span>分享</span></h3>
+<p>当你轻点“分享”时，iOS 的共享面板会把图案发送到你选择的地方，比如“信息”、“邮件”或其他 App。之后适用该服务自己的隐私政策。</p>
+<h3><span class="n">08</span><span>反馈与评分</span></h3>
+<ul>
+<li><strong>“发送反馈”</strong>（位于“设置”中）会打开你自己的邮件 App，并生成一封发给开发者的邮件，主题中包含本 App 的版本号和构建号。除非你亲自发送，否则不会发出任何内容。邮件仅用于回复你和改进本 App。</li>
+<li><strong>“喜欢 Kaleiduo 吗？”</strong>可能会在你添加图案后偶尔出现。选择“是的，很喜欢！”会打开由 Apple 处理的 Apple 评分窗口；选择“不太喜欢”会打开反馈邮件。Kaleiduo 会在你的 iPhone 上记下已经询问过，以免问得太频繁。</li>
+</ul>
+<h3><span class="n">09</span><span>Apple</span></h3>
+<p>下载，以及（如果你在 iOS 的分析设置中开启了“与 App 开发者共享”）崩溃报告和使用统计，均由 Apple 依据其隐私政策处理。开发者只能以 Apple 提供的报告形式查看这些信息，报告不会识别你的身份。</p>
+<h3><span class="n">10</span><span>删除你的数据</span></h3>
+<p>要删除某个图案，请在图库中将其全屏打开，然后轻点“删除”。删除本 App 会移除其图库和设置。已存储到“照片”或已分享的图案会保留在原处。要关闭相机、麦克风或照片权限，请前往 iPhone 上的“设置”›“Kaleiduo”。</p>
+<h3><span class="n">11</span><span>儿童</span></h3>
+<p>Kaleiduo 不会收集任何人（包括儿童）的个人信息。</p>
+<h3><span class="n">12</span><span>你的权利</span></h3>
+<p>无论你身在何处，包括欧盟、英国、瑞士和魁北克，你都对自己的个人信息享有权利。由于本 App 不向开发者发送任何内容，因此不存在可供查阅、更正、导出或删除的来自本 App 的数据。如果你曾给我们发送邮件，可以要求获取这些往来邮件的副本，或要求我们删除。</p>
+<h3><span class="n">13</span><span>本政策的变更</span></h3>
+<p>如果本政策有变，新版本将连同新的日期发布在本页面上。</p>
+<h3><span class="n">14</span><span>适用法律</span></h3>
+<p>本政策受加拿大魁北克省法律管辖，不考虑其法律冲突规则。</p>
+<h3><span class="n">15</span><span>联系方式</span></h3>
+<p>Kaleiduo 由 ForThemCreation 开发和维护。如对本政策有任何疑问，请发送邮件至 <a href="mailto:forthemcreation@gmail.com">forthemcreation@gmail.com</a>。</p>
+<h3><span class="n">16</span><span>本网站</span></h3>
+<p>本页面托管于 GitHub Pages。为提供页面，GitHub 可能会处理你的 IP 地址和浏览器信息等技术信息。本页面本身不使用 Cookie、追踪器或外部字体。</p>
+<p class="cross"><a href="https://hugolamarreftc.github.io/Kaleiduo-support/#zh">支持 →</a></p>
+</section>
+<section class="lang" id="ja" lang="ja">
+<h2 class="title">プライバシーポリシー</h2>
+<p class="meta">最終更新：2026年11月</p>
+<p>Kaleiduo（以下「本アプリ」）は、iPhoneのカメラを万華鏡に変えるアプリです。撮影したものは、あなたが自分で送らない限りiPhoneの中にとどまるように作られています。このポリシーでは、本アプリが何をどのような目的で使うかを説明します。</p>
+<h3><span class="n">01</span><span>アカウントなし、トラッキングなし</span></h3>
+<p>Kaleiduoには、サインイン、広告、解析ツール、あなたに関する情報を送信するサードパーティのコードのいずれもありません。本アプリが独自にネットワーク接続を行うことはなく、開発者が個人情報を収集、受信、販売、共有することもありません。</p>
+<h3><span class="n">02</span><span>カメラ</span></h3>
+<p>カメラの映像はリアルタイムで万華鏡に使われます。フレームはiPhone上で処理され、すぐに破棄されます。保存されるのは、あなたが撮影した写真とビデオだけで、本アプリのギャラリーに保存されます。</p>
+<h3><span class="n">03</span><span>マイク</span></h3>
+<p>許可した場合、録画するビデオにマイクの音声が加わります。マイクが使われるのは録画中だけです。許可しない場合、ビデオは無音になります。</p>
+<h3><span class="n">04</span><span>顔データ</span></h3>
+<p>顔エフェクト（顔を欠けさせない、顔マンダラ、グループマンダラ、顔のみ、回る世界、頭を傾けて回転、笑顔で撮影）と被写体モードは、AppleのVisionおよびCore Imageフレームワークをデバイス上で使い、カメラの映像またはあなたが選んだ写真から、顔、目、頭の傾き、笑顔、人物の輪郭を検出します。これらの情報は：</p>
+<ul>
+<li>iPhone上で1秒間に数回計算され、エフェクトがオンの間だけメモリに保持されます。</li>
+<li>顔の周りにパターンを配置・フレーミングすること、回転を決めること、笑顔でカウントダウンを始めることだけに使われます。</li>
+<li>保存されることも、iPhoneの外に送られることも、誰かと共有されることも、誰かを特定・認識するために使われることも一切ありません。</li>
+</ul>
+<p>撮影した写真とビデオには完成したパターンが写るだけで、顔データは一緒に保存されません。</p>
+<h3><span class="n">05</span><span>あなたの写真</span></h3>
+<ul>
+<li><strong>写真をソースとして使う：</strong>「ライブラリ」では、iOSの写真ピッカーがあなたの選んだ写真1枚だけをKaleiduoに渡し、ライブラリのほかの写真にはアクセスできません。その写真はコピーも保存もされず、アプリを再起動すると消えます。</li>
+<li><strong>写真に保存：</strong>初めて保存するとき、Kaleiduoはフォトライブラリへの追加の許可を求めます。この許可でできるのは写真とビデオの追加だけで、ライブラリの中身を見ることはできません。</li>
+</ul>
+<h3><span class="n">06</span><span>iPhoneに保存されるもの</span></h3>
+<ul>
+<li><strong>ギャラリー：</strong>撮影した写真とビデオ、およびそれぞれの角度、パターンの種類、日付、長さ、折りたたみの軌跡、お気に入りかどうか。</li>
+<li><strong>設定と選択：</strong>パターンの種類、フィルタ、スライス線、回転、顔エフェクト、そしてイントロ・ヒント・評価の質問をすでに見たかどうか。</li>
+</ul>
+<p>これらはiPhone上の本アプリ専用の領域に保存され、Appleの規約に従ってiCloudやコンピュータのバックアップに含まれる場合があります。開発者がこれらを見ることはできません。</p>
+<h3><span class="n">07</span><span>共有</span></h3>
+<p>「共有」をタップすると、iOSの共有シートを通じて、メッセージ、メール、ほかのアプリなど、あなたが選んだ先にパターンが送られます。その先では、そのサービスのプライバシーポリシーが適用されます。</p>
+<h3><span class="n">08</span><span>フィードバックと評価</span></h3>
+<ul>
+<li><strong>「フィードバックを送信」</strong>（設定内）を使うと、あなた自身のメールアプリで開発者宛てのメッセージが開きます。件名には本アプリのバージョンとビルド番号が入ります。あなたが自分で送信しない限り、何も送られません。メールは返信とアプリの改善にのみ使われます。</li>
+<li><strong>「Kaleiduoを楽しんでいますか？」</strong>は、パターンを追加したあとにときどき表示されることがあります。「はい、大好きです！」を選ぶとAppleの評価画面が開き、Appleが処理します。「いまいち」を選ぶとフィードバックのメールが開きます。尋ねすぎないよう、尋ねたことはiPhone上に記録されます。</li>
+</ul>
+<h3><span class="n">09</span><span>Apple</span></h3>
+<p>ダウンロードと、iOSの解析設定で「App デベロッパと共有」をオンにしている場合のクラッシュレポートや使用状況の統計は、Appleが自社のプライバシーポリシーに基づいて扱います。開発者はこれらを、あなたを特定しないAppleのレポートとしてのみ見ることができます。</p>
+<h3><span class="n">10</span><span>データの削除</span></h3>
+<p>パターンを削除するには、ギャラリーから全画面で開き、「削除」をタップします。本アプリを削除すると、ギャラリーと設定も削除されます。写真に保存したパターンや共有したパターンは、保存先・送信先に残ります。カメラ、マイク、写真へのアクセスをオフにするには、iPhoneの「設定」›「Kaleiduo」を開きます。</p>
+<h3><span class="n">11</span><span>お子様</span></h3>
+<p>Kaleiduoは、お子様を含め、誰の個人情報も収集しません。</p>
+<h3><span class="n">12</span><span>あなたの権利</span></h3>
+<p>EU、英国、スイス、ケベック州を含め、どこにお住まいでも、あなたには自分の個人情報に関する権利があります。本アプリは開発者に何も送らないため、閲覧、訂正、エクスポート、削除の対象となる本アプリ由来のデータはありません。メールでご連絡いただいた場合は、そのやり取りの写しの提供や削除を求めることができます。</p>
+<h3><span class="n">13</span><span>本ポリシーの変更</span></h3>
+<p>本ポリシーを変更した場合は、新しい日付とともにこのページに掲載します。</p>
+<h3><span class="n">14</span><span>準拠法</span></h3>
+<p>本ポリシーは、抵触法の規定にかかわらず、カナダ・ケベック州の法律に準拠します。</p>
+<h3><span class="n">15</span><span>お問い合わせ</span></h3>
+<p>KaleiduoはForThemCreationが開発・運営しています。本ポリシーに関するご質問は、<a href="mailto:forthemcreation@gmail.com">forthemcreation@gmail.com</a> までお送りください。</p>
+<h3><span class="n">16</span><span>このウェブサイト</span></h3>
+<p>このページはGitHub Pagesでホストされています。ページを表示するために、GitHubがIPアドレスやブラウザの情報などの技術的な情報を処理する場合があります。このページ自体は、Cookie、トラッカー、外部フォントを使用していません。</p>
+<p class="cross"><a href="https://hugolamarreftc.github.io/Kaleiduo-support/#ja">サポート →</a></p>
+</section>
+<section class="lang" id="hi" lang="hi">
+<h2 class="title">प्राइवेसी पॉलिसी</h2>
+<p class="meta">पिछला अपडेट: नवंबर 2026</p>
+<p>Kaleiduo (“ऐप”) आपके iPhone के कैमरे को कैलाइडोस्कोप में बदल देता है। इसे इस तरह बनाया गया है कि आप जो भी फ़िल्माएँ, वह आपके iPhone पर ही रहे, जब तक आप खुद उसे कहीं न भेजें। यह पॉलिसी बताती है कि ऐप किन चीज़ों का इस्तेमाल करता है और क्यों।</p>
+<h3><span class="n">01</span><span>न अकाउंट, न ट्रैकिंग</span></h3>
+<p>Kaleiduo में न साइन-इन है, न विज्ञापन, न एनालिटिक्स, और न ही कोई थर्ड-पार्टी कोड जो आपके बारे में जानकारी भेजे। ऐप अपनी ओर से कोई नेटवर्क कनेक्शन नहीं बनाता, और डेवलपर कोई भी निजी जानकारी न इकट्ठा करता है, न प्राप्त करता है, न बेचता है और न शेयर करता है।</p>
+<h3><span class="n">02</span><span>कैमरा</span></h3>
+<p>कैमरा कैलाइडोस्कोप को लाइव तस्वीर देता है। फ़्रेम आपके iPhone पर प्रोसेस होते हैं और तुरंत हटा दिए जाते हैं। सिर्फ़ वही फ़ोटो और वीडियो ऐप की गैलरी में रखे जाते हैं, जो आप खुद लेते हैं।</p>
+<h3><span class="n">03</span><span>माइक्रोफ़ोन</span></h3>
+<p>अगर आप अनुमति दें, तो माइक्रोफ़ोन आपके रिकॉर्ड किए वीडियो में आवाज़ जोड़ता है। इसका इस्तेमाल सिर्फ़ रिकॉर्डिंग के दौरान होता है। इसके बिना वीडियो में आवाज़ नहीं होती।</p>
+<h3><span class="n">04</span><span>चेहरे का डेटा</span></h3>
+<p>फ़ेस इफ़ेक्ट (चेहरा पूरा रखें, फ़ेस मंडला, ग्रुप मंडला, सिर्फ़ चेहरा, घूमती दुनिया, सिर झुकाकर घुमाएँ और मुस्कुराएँ, फ़ोटो लें) और सब्जेक्ट मोड, Apple के Vision और Core Image फ़्रेमवर्क का इस्तेमाल डिवाइस पर ही करते हैं, ताकि कैमरे या आपकी चुनी हुई फ़ोटो में चेहरे, आँखें, सिर का झुकाव, मुस्कान और व्यक्ति की आउटलाइन पहचानी जा सके। यह जानकारी:</p>
+<ul>
+<li>आपके iPhone पर हर सेकंड कुछ बार निकाली जाती है और सिर्फ़ तब तक मेमोरी में रहती है जब तक कोई इफ़ेक्ट चालू है;</li>
+<li>सिर्फ़ चेहरों के आसपास पैटर्न को रखने और फ़्रेम करने, उसका घुमाव तय करने और आपके मुस्कुराने पर काउंटडाउन शुरू करने के लिए इस्तेमाल होती है;</li>
+<li>कभी सेव नहीं होती, कभी आपके iPhone से बाहर नहीं भेजी जाती, कभी किसी के साथ शेयर नहीं होती और कभी किसी को पहचानने के लिए इस्तेमाल नहीं होती।</li>
+</ul>
+<p>आपके लिए गए फ़ोटो और वीडियो में सिर्फ़ तैयार पैटर्न दिखता है। उनके साथ चेहरे का कोई डेटा सेव नहीं होता।</p>
+<h3><span class="n">05</span><span>आपकी फ़ोटो</span></h3>
+<ul>
+<li><strong>फ़ोटो को सोर्स बनाना।</strong> लाइब्रेरी में, iOS का फ़ोटो पिकर Kaleiduo को सिर्फ़ आपकी चुनी हुई फ़ोटो देता है; आपकी बाकी लाइब्रेरी तक कोई पहुँच नहीं होती। वह फ़ोटो न कॉपी होती है, न रखी जाती है, और ऐप दोबारा खोलने पर चली जाती है।</li>
+<li><strong>फ़ोटो में सेव करना।</strong> पहली बार सेव करते समय Kaleiduo आपकी फ़ोटो लाइब्रेरी में जोड़ने की अनुमति माँगता है। इस अनुमति से वह सिर्फ़ फ़ोटो और वीडियो जोड़ सकता है, यह नहीं देख सकता कि लाइब्रेरी में क्या है।</li>
+</ul>
+<h3><span class="n">06</span><span>आपके iPhone पर क्या रहता है</span></h3>
+<ul>
+<li><strong>आपकी गैलरी:</strong> आपके लिए गए फ़ोटो और वीडियो, और हर एक का कोण, पैटर्न का प्रकार, तारीख, अवधि, मोड़ने का ट्रेस और यह कि वह पसंदीदा है या नहीं।</li>
+<li><strong>आपकी सेटिंग्स और पसंद:</strong> पैटर्न का प्रकार, फ़िल्टर, स्लाइस की रेखाएँ, घुमाव, फ़ेस इफ़ेक्ट, और यह कि आपने इंट्रो, सुझाव और रेटिंग वाला सवाल देख लिया है या नहीं।</li>
+</ul>
+<p>यह सब आपके iPhone पर ऐप के अपने स्टोरेज में रहता है और Apple की शर्तों के अनुसार आपके iCloud या कंप्यूटर बैकअप में शामिल हो सकता है। डेवलपर इसे नहीं देख सकता।</p>
+<h3><span class="n">07</span><span>शेयर करना</span></h3>
+<p>जब आप शेयर करें पर टैप करते हैं, तो iOS की शेयर शीट पैटर्न को आपकी चुनी हुई जगह भेजती है, जैसे Messages, Mail या कोई दूसरा ऐप। वहाँ से आगे उस सेवा की अपनी प्राइवेसी पॉलिसी लागू होती है।</p>
+<h3><span class="n">08</span><span>फ़ीडबैक और रेटिंग</span></h3>
+<ul>
+<li><strong>फ़ीडबैक भेजें</strong> (सेटिंग्स में) आपका अपना ईमेल ऐप खोलता है, जिसमें डेवलपर के नाम एक मैसेज होता है। उसकी सब्जेक्ट लाइन में ऐप का वर्ज़न और बिल्ड नंबर होता है। जब तक आप खुद ईमेल न भेजें, कुछ नहीं भेजा जाता। ईमेल का इस्तेमाल सिर्फ़ आपको जवाब देने और ऐप को बेहतर बनाने के लिए होता है।</li>
+<li><strong>“क्या आपको Kaleiduo पसंद आ रहा है?”</strong> पैटर्न जोड़ने के बाद कभी-कभी दिख सकता है। “हाँ, बहुत पसंद है!” Apple की अपनी रेटिंग शीट खोलता है, जिसे Apple संभालता है। “खास नहीं” फ़ीडबैक ईमेल खोलता है। Kaleiduo आपके iPhone पर याद रखता है कि उसने पूछ लिया है, ताकि बार-बार न पूछे।</li>
+</ul>
+<h3><span class="n">09</span><span>Apple</span></h3>
+<p>डाउनलोड, और अगर आपने iOS की एनालिटिक्स सेटिंग्स में “ऐप डेवलपर्स के साथ शेयर करें” चालू किया है तो क्रैश रिपोर्ट और इस्तेमाल के आँकड़े, Apple अपनी प्राइवेसी पॉलिसी के तहत संभालता है। डेवलपर इन्हें सिर्फ़ Apple की रिपोर्ट के रूप में देख सकता है, जिनसे आपकी पहचान नहीं होती।</p>
+<h3><span class="n">10</span><span>अपना डेटा हटाना</span></h3>
+<p>किसी पैटर्न को हटाने के लिए उसे गैलरी से फ़ुल स्क्रीन में खोलें और हटाएँ पर टैप करें। ऐप हटाने से उसकी गैलरी और सेटिंग्स मिट जाती हैं। जो पैटर्न आपने फ़ोटो में सेव किए या शेयर किए, वे वहीं रहते हैं जहाँ आपने उन्हें रखा। कैमरा, माइक्रोफ़ोन या फ़ोटो की पहुँच बंद करने के लिए अपने iPhone पर सेटिंग्स › Kaleiduo में जाएँ।</p>
+<h3><span class="n">11</span><span>बच्चे</span></h3>
+<p>Kaleiduo किसी से भी, बच्चों से भी, कोई निजी जानकारी इकट्ठा नहीं करता।</p>
+<h3><span class="n">12</span><span>आपके अधिकार</span></h3>
+<p>आप कहीं भी रहते हों, जिसमें EU, UK, स्विट्ज़रलैंड और क्यूबेक शामिल हैं, अपनी निजी जानकारी पर आपके अधिकार हैं। चूँकि ऐप डेवलपर को कुछ नहीं भेजता, इसलिए ऐप से आया ऐसा कोई डेटा नहीं है जिसे देखा, सुधारा, एक्सपोर्ट किया या हटाया जा सके। अगर आपने हमें ईमेल किया है, तो आप उस बातचीत की कॉपी माँग सकते हैं या उसे हटाने को कह सकते हैं।</p>
+<h3><span class="n">13</span><span>इस पॉलिसी में बदलाव</span></h3>
+<p>अगर यह पॉलिसी बदलती है, तो नया वर्ज़न नई तारीख के साथ इसी पेज पर पोस्ट किया जाएगा।</p>
+<h3><span class="n">14</span><span>लागू कानून</span></h3>
+<p>यह पॉलिसी कनाडा के क्यूबेक प्रांत के कानूनों के अधीन है, उसके कानूनों के टकराव संबंधी नियमों की परवाह किए बिना।</p>
+<h3><span class="n">15</span><span>संपर्क</span></h3>
+<p>Kaleiduo को ForThemCreation बनाता और संभालता है। इस पॉलिसी के बारे में किसी भी सवाल के लिए <a href="mailto:forthemcreation@gmail.com">forthemcreation@gmail.com</a> पर लिखें।</p>
+<h3><span class="n">16</span><span>यह वेबसाइट</span></h3>
+<p>यह पेज GitHub Pages पर होस्ट किया गया है। इसे दिखाने के लिए GitHub आपका IP पता और ब्राउज़र की जानकारी जैसी तकनीकी जानकारी प्रोसेस कर सकता है। यह पेज खुद कोई कुकी, ट्रैकर या बाहरी फ़ॉन्ट इस्तेमाल नहीं करता।</p>
+<p class="cross"><a href="https://hugolamarreftc.github.io/Kaleiduo-support/#hi">सहायता →</a></p>
+</section>
+</main>
+<footer><span>© 2026 ForThemCreation</span><span><a href="https://hugolamarreftc.github.io/Kaleiduo-support/">Support</a> · <a href="mailto:forthemcreation@gmail.com">forthemcreation@gmail.com</a></span></footer>
+</div>
+<script>(function(){if(location.hash)return;var ids=["fr","es","zh","ja","hi"],l=navigator.languages||[navigator.language||""];
+for(var i=0;i<l.length;i++){var p=String(l[i]).toLowerCase().split("-")[0];if(p==="en")return;
+if(ids.indexOf(p)>-1){var e=document.getElementById(p);if(e)e.scrollIntoView();return}}})();</script>
+</body>
+</html>
